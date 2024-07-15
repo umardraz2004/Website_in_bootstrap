@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-colors: (
+    "dark-jungle-green" : rgb(35, 35, 35),
+    "silver": #CACACA
+
+);
+$theme-colors: map-merge($theme-colors , $custom-colors);
+
+$font-family-lora: 'Lora', serif;
+$font-family-inter: 'Inter', sans-serif;
+
+// $custom-font-sizes: (
+//   1: 1rem,
+//   2: 4.5rem,
+//   3: 4rem,
+//   4: 3.5rem,
+//   5: 3rem,
+//   6: 2.5rem
+// );
+
+// $display-font-sizes: map-merge($display-font-sizes , $custom-font-sizes );
+
+
+.inter {
+    font-family: $font-family-inter;
+}
+
+.lora {
+    font-family:$font-family-lora;
+}
+
+.top-75 {
+    top: 73% ;
+}
+
+.opacity-10 {
+    opacity: 0.8;
+}
+
+.mt-6 {
+    margin-top: 3.75rem !important;
+}
+
+.custom-font-size {
+    font-size: 60px !important;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';
