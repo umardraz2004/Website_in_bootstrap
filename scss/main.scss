@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-colors: (
+    "theme": rgba(58, 197, 105, 1),
+    "template-gray-5": rgba(0, 0, 0, 0.5),
+    "template-gray-bold-75": rgba(0, 0, 0, 0.75),
+    "find-events-items_25":rgba(0, 0, 0, 0.25),
+    "home3-light-black":rgba(51, 51, 51, 1),
+    "home-black": rgba(35, 35, 35, 1),
+    "home-light-black": rgba(29, 29, 29, 1),
+    "home-gray-white": rgba(202, 202, 202, 1),
+    "about-sec3bg": rgba(245, 244, 240, 1),
+    "course-detail-review-gray": rgba(217, 217, 217, 1),
+    "footer-bg": rgba(0, 6, 71, 1),
+    "footer-text-gray": rgba(253, 249, 249, 0.7),
+);
+$theme-colors: map-merge($theme-colors , $custom-colors);
+
+$font-family-lora: 'Lora', serif;
+$font-family-inter: 'Inter', sans-serif;
+
+.inter {
+    font-family: $font-family-inter;
+}
+
+.lora {
+    font-family:$font-family-lora;
+}
+
+.top-75 {
+    top: 73% ;
+}
+
+.opacity-10 {
+    opacity: 0.8;
+}
+
+.mt-6 {
+    margin-top: 3.75rem !important;
+}
+
+.custom-font-size {
+    font-size: 60px !important;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap';
