@@ -58,9 +58,3 @@
     }
 } */
 
-
-@media (max-width: 576px) {
-    .responsive-text {
-        width: 100% !important;
-    }
-}
