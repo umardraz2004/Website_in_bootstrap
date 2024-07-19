@@ -1,11 +1,103 @@
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 
-.our-goals {
+.events-blogs-section {
+    background-image: url('../Assets/images/Home1/Section6\ events\ bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 80px 0;
+    position: relative;
+}
+
+.events-blogs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.events::before {
+    content: '';
+    background-image: url('../Assets/images/Home/Section6\ events\ bg.jpg');
+    background-size: cover;
+    filter: brightness(0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.our-goals::before {
+    content: '';
     background-image: url('../Assets/images/Home/Section4.png');
     background-size: cover;
-    height: fit-content;
+    filter: brightness(0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.custom-banner {
+    background-image: url('../Assets/images/Home1/Section\ 9\ bg.png');
+    background-size: cover;
+    position: relative;
+}
+
+.custom-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(4, 4, 4, 0.8);
+}
+
+.header-bg {
+    background: url('../Assets/images/Home1/Landing\ page\ bg.png') center;
+    background-size: cover;
+    height: 57.688rem;
+    width: 100%;
+    bottom: 83px;
+}
+
+.header-bg::before {
+    content: '';
+    position: absolute;
+    top: 84px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    height: 52.5rem;
+}
+
+.form-floating Label,
+.form-floating .form-control {
+    left: .5rem;
+    padding-left: 3.5rem;
+    z-index: 0;
+}
+
+.landing-page {
+    background: url('../Assets/Images/Home/Landing\ page.png') center;
+    height: 120vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.landing-page::before {
+    height: 120%;
 }
