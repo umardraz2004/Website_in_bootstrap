@@ -29,6 +29,10 @@
   font-size: 1.25rem !important;
 }
 
+.w-96 {
+  width: 96%;
+}
+
 .w-57per {
   width: 57% !important;
 }
@@ -1393,7 +1397,7 @@
   }
 }
 .top-75 {
-  top: 73%;
+  top: 67%;
 }
 
 .opacity-10 {
