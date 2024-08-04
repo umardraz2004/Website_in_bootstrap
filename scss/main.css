@@ -21,6 +21,18 @@
   opacity: 0.8;
 }
 
+.border-8px {
+  border: 8px solid !important;
+}
+
+.fs-22 {
+  font-size: 1.375rem !important;
+}
+
+.w-44per {
+  width: 44% !important;
+}
+
 .mt-33 {
   margin-top: 2.0625rem !important;
 }
@@ -78,11 +90,6 @@
   margin-bottom: 2rem !important;
 }
 
-.my-7rem {
-  margin-top: 7rem !important;
-  margin-bottom: 7rem !important;
-}
-
 @media (max-width: 576px) {
   .w-sm-90 {
     width: 90% !important;
@@ -114,19 +121,9 @@
   .fs-ms-3vw {
     font-size: 3vw !important;
   }
-  .form-sm-floating .form-sm-control {
+  .form-floating Label,
+  .form-floating .form-control {
     padding-left: 2.5rem !important;
-  }
-  .form-sm-label {
-    padding-left: 2.5rem !important;
-  }
-  .apply-btn-sm {
-    width: 30%;
-    height: 60%;
-    font-size: 12px !important;
-  }
-  .text-justify-sm {
-    text-align: justify;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -229,11 +226,8 @@
     font-size: 0.75rem;
     padding-top: 20px;
   }
-  .form-lg-floating .form-lg-control {
-    padding-top: 1.0625rem !important;
-    padding-left: 2.75rem !important;
-  }
-  .form-lg-label {
+  .form-floating Label,
+  .form-floating .form-control {
     padding-top: 1.0625rem !important;
     padding-left: 2.75rem !important;
   }
@@ -245,14 +239,8 @@
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-  .fs-xl-point75 {
-    font-size: 0.75rem !important;
-  }
   .fs-xl-30 {
     font-size: 1.5rem !important;
-  }
-  .fs-xl-872rem {
-    font-size: 0.872rem !important;
   }
   .fs-xl-20 {
     font-size: 1rem !important;
@@ -636,6 +624,22 @@
   .w-md-372 {
     width: 23.25rem !important;
   }
+  .header-bg {
+    background: url("Assests/images/Home1/Landing page bg.png") center;
+    background-size: cover;
+    height: 57.688rem;
+    width: 745px !important;
+    bottom: 83px;
+  }
+  .header-bg::before {
+    content: "";
+    position: absolute;
+    top: 84px;
+    width: 745px !important;
+    background-color: black;
+    opacity: 0.5;
+    height: 52.5rem;
+  }
 }
 @media (max-width: 425px) {
   .m-md-40 {
@@ -823,7 +827,7 @@
 }
 
 .w-56perc {
-  width: 59% !important;
+  width: 56% !important;
 }
 
 .w-60 {
@@ -848,9 +852,6 @@
   }
   .fs-xs-point5 {
     font-size: 0.5rem !important;
-  }
-  .fs-xs-1point5rem {
-    font-size: 1.5rem !important;
   }
 }
 @media (max-width: 576px) {
@@ -892,18 +893,6 @@
   }
   .p-sm-1rem {
     padding: 1rem !important;
-  }
-  .fs-sm-3rem {
-    font-size: 3rem !important;
-  }
-  .fs-sm-point7rem {
-    font-size: 0.7rem !important;
-  }
-  .fs-sm-8vw {
-    font-size: 8vw !important;
-  }
-  .fs-sm-2vw {
-    font-size: 2vw !important;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -955,11 +944,8 @@
   .border-md-0 {
     border: 0px;
   }
-  .w-md-100 {
+  w-md-100 {
     width: 100% !important;
-  }
-  .fs-md-point7rem {
-    font-size: 0.7rem !important;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
@@ -1029,12 +1015,6 @@
   .pe-lg-41 {
     padding-right: 2.6rem;
   }
-  .fs-lg-3rem {
-    font-size: 3rem !important;
-  }
-  .fs-lg-point7rem {
-    font-size: 0.7rem !important;
-  }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .fs-xl-10 {
@@ -1078,9 +1058,6 @@
   .pe-xl-24 {
     padding-right: 1.5rem;
   }
-  .fs-xl-3rem {
-    font-size: 3rem !important;
-  }
 }
 @media screen and (min-width: 1400px) {
   .pt-xxl-100 {
@@ -1104,6 +1081,15 @@
   opacity: 0.5;
 }
 
+@media (max-width: 1300px) {
+  .home-btn {
+    width: 150px;
+    height: 50px;
+  }
+  .sixth-sec::before {
+    height: 119% !important;
+  }
+}
 @media (min-width: 992px) and (max-width: 1300px) {
   .img-div {
     width: 88% !important;
@@ -1165,6 +1151,9 @@
   .fs-17 {
     font-size: 1.063rem !important;
   }
+  .sixth-sec::before {
+    height: 87% !important;
+  }
   .sixth-sec .sm-font {
     font-size: 1.125rem !important;
   }
@@ -1183,7 +1172,15 @@
     height: 100px !important;
   }
 }
+@media (max-width: 858px) {
+  .sixth-sec::before {
+    height: 99% !important;
+  }
+}
 @media (min-width: 1300px) and (max-width: 1440px) {
+  .sixth-sec::before {
+    height: 102% !important;
+  }
   .fs-xl-70 {
     font-size: 4.375rem !important;
   }
@@ -1313,6 +1310,9 @@
   .choosing {
     text-align: left;
   }
+  .sixth-sec::before {
+    height: 162.5% !important;
+  }
   .section-eight::before {
     height: 108%;
   }
@@ -1379,6 +1379,7 @@
 .apply-btn {
   margin-top: 20px;
   display: inline-block;
+  padding: 10px 20px;
   background-color: #28a745;
   color: #fff;
   text-transform: uppercase;
