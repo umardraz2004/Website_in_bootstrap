@@ -111,7 +111,7 @@
 }
 
 .landing-page {
-    background: url('../Assets/Images/Home/Landing\ page.png') center;
+    background: url('Assets/Images/Home/Landing\ page.png') center;
     height: 120vh;
     width: 100%;
     background-size: cover;
